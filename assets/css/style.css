@@ -1,0 +1,293 @@
+/* CONFIGURAÇÕES GERAIS */
+
+/* HTML - fonte base de 10px (para REM) */
+html {
+    font-size: 10px; 
+}
+
+/* Configurações do Body */
+body {
+    
+}
+
+/* Padrão (Reset) */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+/* FIM CONFIGURAÇÕES GERAIS */
+
+/* FONTES */
+
+.playfair-display-normal {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+/* FIM FONTES */
+
+/* HEADER */
+
+/* Contâiner header */
+#id-header-pagina {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: #2C1A1A;
+    background-color: #F7F7F7;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Contâiner título header */
+#id-div-titulo-pagina {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* Título página */
+#id-titulo-pagina-1 {
+    margin-bottom: -1.6rem;
+    font-size: 3rem;
+}
+
+/* Título página */
+#id-titulo-pagina-2 {
+    font-size: 5rem;
+}
+
+/* Menu de navegação */
+#id-nav-header {
+    padding: 0.8rem;
+    background-color: #FFFFFF;
+    border-radius: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+}
+
+/* Item menu de navegação */
+.class-nav-item {
+    padding: 0.6rem;
+    border-radius: 1rem;
+    text-decoration: none;
+    margin: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all .1s;
+}
+
+/* Item menu de navegação (hover)*/
+.class-nav-item:hover {
+    background-color: #d8d8d8;
+    transform: scale(1.05);
+    transform: translateY(-0.5rem);
+}
+
+/* Título item menu de navegação */
+.nav-titulo {
+    color: #2C1A1A;
+    font-size: 2rem;
+}
+
+/* Ícone item menu de navegação */
+.nav-icon {
+    color: #2C1A1A;
+}
+
+/* Botão chamada Header */
+#id-btn-header {
+    border-radius: 1rem;
+    border: none;
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    padding: 2rem 4rem;
+    background-color: #e9b32c;
+    transition: all 0.1s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Botão chamada Header (hover) */
+#id-btn-header:hover {
+    background-color: #dba722;
+    cursor: pointer;
+    transform: translateY(-0.5rem);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* FIM HEADER */
+
+@media (max-width: 1200px) {
+    /* Contâiner header */
+    #id-header-pagina {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        color: #2C1A1A;
+        background-color: #F7F7F7;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Contâiner título header */
+    #id-div-titulo-pagina {
+        display: none;
+    }
+
+    /* Menu de navegação */
+    #id-nav-header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border-radius: 0;
+        padding: 0.4rem;
+    }
+
+    /* Item menu de navegação */
+    .class-nav-item {
+        padding: 0.6rem;
+        margin: 0 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: all .1s;
+    }
+
+    /* Item menu de navegação (hover)*/
+    .class-nav-item:hover {
+        transform: translateY(0);
+        background-color: #FFFFFF;
+    }
+
+    /* Título item menu de navegação */
+    .nav-titulo {
+        color: #2C1A1A;
+        font-size: 1.3rem;
+    }
+
+    /* Botão chamada Header */
+    #id-btn-header {
+        display: none;
+    }
+}
