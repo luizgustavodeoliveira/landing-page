@@ -1,66 +1,53 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <meta name="description" content="Descrição breve da página">
-    <meta name="author" content="Luiz Gustavo">
-    <title>Aurora Landing Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aurora Coffee</title>
+
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/fonts.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
+    <link href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
-    <!-- Header da página -->
-    <header id="id-header-pagina">
-        <!-- Div de contâiner do título da página -->
-        <div id="id-div-titulo-pagina">
-            <h1 id="id-titulo-pagina-1" class="playfair-display-normal">Aurora Coffee</h1>
-            <h1 id="id-titulo-pagina-2" class="playfair-display-normal">Roasters</h1>
+    <!-- Header -->
+     <header id="id-header-pagina">
+        <div id="div-header-logo">
+            <img id="id-logo-img" src="./assets/css/imgs/logo_aurora.png">
+            <div id="div-titulo-logo">
+                <h1 id="id-titulo-logo1" class="class-titulo-logo playfair-font">Aurora Coffee</h1>
+                <h1 id="id-titulo-logo2" class="class-titulo-logo playfair-font">Roasters</h1>
+            </div>
         </div>
-        <!-- Fim da div de contâiner do título -->
 
-        <!-- Menu de navegação do Header da página -->
+        <!-- Barra de navegação -->
         <nav id="id-nav-header">
-            <!-- Âncora para a Home da página (item 1)-->
-            <a href="#" class="class-nav-item" id="id-ancora-nav-home">
-                <span class="nav-icon material-symbols-outlined">home</span>
-                <span class="nav-titulo poppins-regular">Home</span>
+            <a href="#home" class="class-item-nav" id="id-item-promocoes">
+                <span class="class-icone-item-nav material-symbols-outlined">percent_discount</span>
+                <span class="class-legenda-item-nav poppins-regular">Promoções</span>
             </a>
-            <!-- Fim da âncora para a Home da página (item 1)-->
-
-            <!-- Âncora para a Nossa História da página (item 2)-->
-            <a href="#" class="class-nav-item" id="id-ancora-nav-historia">
-                <span class="nav-icon material-symbols-outlined">book_2</span>
-                <span class="nav-titulo poppins-regular">Nossa história</span>
+            <a href="#perfil" class="class-item-nav" id="id-item-cardapio">
+                <span class="class-icone-item-nav material-symbols-outlined">menu_book_2</span>
+                <span class="class-legenda-item-nav poppins-regular">Cardápio</span>
             </a>
-            <!-- Fim da âncora para a Nossa História da página (item 2)-->
-
-            <!-- Âncora para o Menu da página (item 3)-->
-            <a href="#" class="class-nav-item" id="id-ancora-nav-menu">
-                <span class="nav-icon material-symbols-outlined">coffee_maker</span>
-                <span class="nav-titulo poppins-regular">Menu</span>
+            <a href="#mensagens" class="class-item-nav" id="id-item-historia">
+                <span class="class-icone-item-nav material-symbols-outlined">book_5</span>
+                <span class="class-legenda-item-nav poppins-regular">História</span>
             </a>
-            <!-- Fim da âncora para o Menu da página (item 3)-->
-
-            <!-- Âncora para a Localização da página (item 4)-->
-            <a href="#" class="class-nav-item" id="id-ancora-nav-localizacao">
-                <span class="nav-icon material-symbols-outlined">location_on</span>
-                <span class="nav-titulo poppins-regular">Localização</span>
+            <a href="#configuracoes" class="class-item-nav" id="id-item-visita">
+                <span class="class-icone-item-nav material-symbols-outlined">tour</span>
+                <span class="class-legenda-item-nav poppins-regular">Visite-nos</span>
             </a>
-            <!-- Fim da âncora para a Localização da página (item 4)-->
         </nav>
-    <!-- Fim do menu de navegação do Header -->
-    <button id="id-btn-header" class="poppins-regular">
-        <span class="material-symbols-outlined">local_cafe</span>
-        Peça Aqui
-    </button>
-    </header>
-    <!-- Fim do Header da página -->
+
+        <button id="btn-header-cta" class="poppins-bold">Peça Online</button>
+     </header>
 </body>
 </html>
