@@ -21,12 +21,60 @@ body {
   background-color: #FAF7F2;
   border-bottom: 1px solid #e2e2e2;
 
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
   box-shadow: 
     /* Sombra principal: pouca expansão, mais desfoque */
     0 4px 12px rgba(0, 0, 0, 0.1), 
     /* Sombra secundária: para dar mais profundidade */
     0 2px 4px rgba(0, 0, 0, 0.06);
     transition: all 0.1s;
+
+  z-index: 1000;
+
+  transition: 0.1s all ease-out;
+}
+
+.shrink {
+  height: 3.5rem;
+  justify-content: center !important;
+}
+
+.class-display-none {
+  display: none !important;
+}
+
+.shrink #id-nav-header {
+  height: 3.4rem;
+}
+
+.shrink .class-item-nav {
+  padding: 0.5rem 0.8rem;
+  margin: 0 2rem;
+  transition: all 0.1s ease-out;
+}
+
+.shrink .class-item-nav:hover {
+  transform: translateY(0rem) !important;
+}
+
+.shrink .class-icone-item-nav {
+  font-size: 2rem;
+}
+
+.shrink .class-legenda-item-nav {
+  font-size: 1.4rem;
+}
+
+.shrink .class-item-nav:hover .class-icone-item-nav {
+  transform: scale(1.0);
+}
+
+.shrink .class-item-nav:hover .class-legenda-item-nav {
+  transform: scale(1.0);
 }
 
 .class-header-ativo {
@@ -144,7 +192,61 @@ body {
   display: none;
 }
 
-@media (max-width: 1120px) {
+#id-hero-section {
+  margin-top: 15rem;
+  margin-bottom: 15rem;
+  border: 1px solid #e2e2e2;
+  height: 43rem;
+  position: relative;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url(./imgs/hero_banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  box-shadow: 
+    /* Sombra principal: pouca expansão, mais desfoque */
+    0 4px 12px rgba(0, 0, 0, 0.1), 
+    /* Sombra secundária: para dar mais profundidade */
+    0 2px 4px rgba(0, 0, 0, 0.06);
+}
+
+#id-hero-section::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.45);
+  z-index: 2;
+}
+
+#id-titulo-principal-hero {
+  color: #e2e2e2;
+  font-size: 5.2rem;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.9);
+  font-weight: 600;
+  z-index: 3;
+}
+
+#id-subtitulo-principal-hero {
+  color: #e2e2e2;
+  font-size: 4.2rem;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.9);
+  font-weight: 600;
+  margin-top: 1.8rem;
+  z-index: 3;
+}
+
+@media (max-width: 768px) {
    #id-header-pagina {
     display: flex;
     flex-direction: column;
@@ -199,7 +301,7 @@ body {
     } 
 
     #div-menu-icon {
-      position: absolute;
+      position: fixed;
       z-index: 999;
       top: 2rem;
       left: 0;
