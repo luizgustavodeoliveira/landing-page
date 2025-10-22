@@ -4,15 +4,28 @@ const btn_fechar_menu = document.querySelector('#id-span-close-header');
 const header = document.querySelector("#id-header-pagina");
 const divHeaderLogo = document.querySelector("#div-header-logo");
 const btnHeaderCta = document.querySelector("#btn-header-cta");
+const fundoPreto = document.querySelector("#fundo-preto");
+const html = document.querySelector("html");
 
 btn_ativar_menu.addEventListener('click', (evt) => {
     header.classList.toggle('class-header-ativo');
     btn_ativar_menu.classList.toggle('class-botao-menu-inativo');
+    fundoPreto.style.display = 'block';
+    html.style.overflow = 'hidden';
 });
+
+fundoPreto.addEventListener('click', (evt)=>{
+    header.classList.toggle('class-header-ativo');
+    btn_ativar_menu.classList.toggle('class-botao-menu-inativo');
+    fundoPreto.style.display = 'none';
+    html.style.overflow = 'scroll';
+})
 
 btn_fechar_menu.addEventListener('click', (evt) => {
     header.classList.toggle('class-header-ativo');
     btn_ativar_menu.classList.toggle('class-botao-menu-inativo');
+    fundoPreto.style.display = 'none';
+    html.style.overflow = 'scroll';
 });
 
 document.addEventListener("DOMContentLoaded", function(){
