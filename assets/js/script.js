@@ -7,6 +7,14 @@ const btnHeaderCta = document.querySelector("#btn-header-cta");
 const fundoPreto = document.querySelector("#fundo-preto");
 const html = document.querySelector("html");
 
+const tituloPrincipalHero = document.querySelector('#id-titulo-principal-hero');
+
+const mobileBreakpoint = 768;
+
+if(window.innerWidth < mobileBreakpoint){
+    tituloPrincipalHero.textContent = 'Aurora Coffee Roasters Onde o Dia Começa';
+}
+
 btn_ativar_menu.addEventListener('click', (evt) => {
     header.classList.toggle('class-header-ativo');
     btn_ativar_menu.classList.toggle('class-botao-menu-inativo');
@@ -30,7 +38,6 @@ btn_fechar_menu.addEventListener('click', (evt) => {
 
 document.addEventListener("DOMContentLoaded", function(){
     const scrollTrigger = 50;
-    const mobileBreakpoint = 768;
 
     function checkScroll() {
         if((window.scrollY >= scrollTrigger) && (window.innerWidth>mobileBreakpoint)) {
