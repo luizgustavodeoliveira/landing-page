@@ -12,7 +12,7 @@ const tituloPrincipalHero = document.querySelector('#id-titulo-principal-hero');
 const mobileBreakpoint = 768;
 
 if(window.innerWidth < mobileBreakpoint){
-    tituloPrincipalHero.textContent = 'Aurora Coffee Roasters Onde o Dia Começa';
+    tituloPrincipalHero.innerHTML = '<h1 id="id-titulo-principal-hero" class="playfair-font">Aurora Coffee Roasters: <br>Onde o Dia Começa</h1>';
 }
 
 btn_ativar_menu.addEventListener('click', (evt) => {
